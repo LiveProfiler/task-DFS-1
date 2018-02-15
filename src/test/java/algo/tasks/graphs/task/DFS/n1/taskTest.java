@@ -11,7 +11,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class taskTests {
+public class taskTest {
     private TaskSolver solver = new Solver();
     private List<Pair<String[], String[]>> testsAndAnswers;
 
@@ -88,6 +88,22 @@ public class taskTests {
             }
     );
 
+    private Pair<String[], String[]> test_6 = new ImmutablePair<>(
+            new String[] {
+                    "4",
+                    "2 0",
+                    "1 3 4 0",
+                    "2 0",
+                    "2 0"
+            },
+            new String[] {
+                    "Y",
+                    "1 3 4",
+                    "0",
+                    "2"
+            }
+    );
+
     @Before
     public void setUp(){
         testsAndAnswers = new ArrayList<>();
@@ -96,6 +112,7 @@ public class taskTests {
         testsAndAnswers.add(test_3);
         testsAndAnswers.add(test_4);
         testsAndAnswers.add(test_5);
+        testsAndAnswers.add(test_6);
     }
 
 
