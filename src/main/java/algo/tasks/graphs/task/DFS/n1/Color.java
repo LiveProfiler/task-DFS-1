@@ -1,4 +1,4 @@
-package algo.task.graph.task.DFS.n1;
+package algo.tasks.graphs.task.DFS.n1;
 
 public enum Color {
     NO_COLOR,
